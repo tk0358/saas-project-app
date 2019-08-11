@@ -12,6 +12,7 @@ gem 'rails', '~> 5.1.7'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'devise'
 gem 'milia'
+gem 'jquery-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
