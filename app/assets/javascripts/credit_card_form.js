@@ -51,10 +51,10 @@ $(document).ready(function () {
       $('[data-stripe]').removeProp('required');
     }
   }
-
+  
   // Set up plan change event listener #tenant_plan id in the forms for class cc_form
   $("#tenant_plan").on('change', function(event) {
-    handlePlanChange($('tenant_plan :selected').val(), "cc_form");
+    handlePlanChange($('tenant_plan :selected').val(), ".cc_form");
   });
 
   // call plan genge handler so that the plan is set correctly in the drop down when the plan loads
@@ -88,7 +88,6 @@ $(document).ready(function () {
     if($("#flash-messages").size() < 1){
       $('div.container.main div:first').prepend("<div id='flash-messages'></div>")
     }
-    
     $("#flash-messages").html('<div class="alert alert-warning"><a class="close" data-dismiss="alert">×</a><div id="flash_alert">' + message + '</div></div>');
     $('.alert').delay(5000).fadeOut(3000);
     return false;
